@@ -1,0 +1,18 @@
+.english_slide{
+    display: none !important;
+}
+@media (min-width:500px) {
+    .english_slide{
+        display: block !important;
+    } 
+}
+@media (min-width:768px) {
+    .hero_img_m{
+        display: none !important;
+    } 
+}
+@media (max-width:768px) {
+    .hero_img_d{
+        display: none !important;
+    } 
+}

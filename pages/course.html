@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="120x120" href="media/fevicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/fevicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/fevicon/favicon-16x16.png">
+    <link rel="manifest" href="/media/fevicon/site.webmanifest">
+    <link rel="mask-icon" href="/media/fevicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/output.css" />
+    <link rel="stylesheet" href="/globle.css" />
+
+   
+  </head>
+  <body>
+    <header class="absolute w-full   top-0 z-50">
+        <nav class="bg-white border border-gray-200   px-2 sm:px-4 py-2.5 rounded   shadow">
+          <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="/index.html" class="flex items-center">
+              <span class="self-center text-xl font-semibold whitespace-nowrap  ">
+                  
+                  <img class="w-40" src="/media/image/logo-1.png" alt="logo">
+                  
+              </span>
+            </a>
+        
+            <div class="flex items-center">
+              <button
+                id="menu-toggle"
+                type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200       md:hidden"
+              >
+                <span class="sr-only">Open main menu</span>
+                <!-- Hamburger icon -->
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
+            </div>
+        
+            <div
+              class="w-full md:block md:w-auto hidden"
+              id="mobile-menu"
+            >
+              <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                <li>
+                  <a
+                    href="/index.html"
+                    class="block py-2 pr-4 pl-3 md:hover:text-blue-700   rounded md:bg-transparent md:p-0  "
+                    aria-current="page"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li class="md:block hidden">
+                  <div class="group relative cursor-pointer ">
+                
+                    <div class="">
+                        <a class="menu-hover block py-2 pr-4 pl-3 md:text-blue-600  rounded md:bg-transparent md:p-0" onClick="">
+                            Courses
+                        </a>
+                        <!-- <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </span> -->
+                    </div>
+            
+                    <div
+                        class="invisible absolute z-50 flex w-48 flex-col bg-white  py-1 px-4  shadow-xl group-hover:visible">
+            
+                        <a href="/courses/datascience.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                            Data Science
+                        </a>
+            
+                        <a href="/courses/powerBi.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                           PowerBi
+                        </a>
+            
+                        <a href="/courses/tableau.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                            Tableau
+                        </a>
+            
+                        <a href="/courses/python.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                            Python
+                        </a>
+            
+                        <a href="/courses/excel.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                            Advance Excel
+                        </a>
+            
+                        <a href="/courses/sql.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                            SQL
+                        </a>
+            
+                        <a href="/courses/digitalMarketing.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                            Digital Marketing
+                        </a>
+                        <a href="/courses/computer.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                            Basic Computer Courses
+                        </a>
+                        <a href="/pages/corporate.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                            Corporate Training
+                        </a>
+                        <a href="/pages/english.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                            Spoken English
+                        </a>
+                       
+            
+                    </div>
+                </div>
+                </li>
+                <li class="md:hidden block">
+                  <a
+                  href="/pages/course.html"
+                  class="py-2 pr-4 pl-3 text-gray-700 border-b block border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0         "
+                >
+                  Courses
+                </a>
+                </li>
+                <li>
+                  <a
+                    href="/pages/corporate.html"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0         "
+                  >
+                    Corporate Training
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/pages/english.html"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0         "
+                  >
+                   Spoken English
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/pages/about.html"
+                    class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/pages/placement.html"
+                    class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0       "
+                  >
+                    Placement
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/pages/contact.html"
+                    class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0       "
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+        
+          </div>
+        </nav>
+      </header>
+    <section class="py-5 pt-24">
+        <div class="flex flex-col justify-center items-center">
+          <p class="uppercase text-slate-500 md:text-xl">--LEARN NEW SKILLS--</p>
+          <h1 class="md:text-5xl text-2xl pb-2 pt-2">
+            <span class="text-purple-700 font-bold">Search</span> Genius Courses.
+          </h1>
+  
+          <div class="grid grid-cols-1 gap-12 md:grid-cols-2 pt-10 xl:grid-cols-3">
+            <div class="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-11/12  md:w-80">
+                <a href="/courses/datascience.html" class="block w-full h-full">
+                    <!-- <img alt="Placement photo" src="/media/Placement/1.jpg" class="object-cover w-full "/> -->
+                    <div class="w-full p-4 bg-white ">
+                        <p class="font-medium text-purple-600 text-md">
+                            Masters's Course In
+                        </p>
+                        <p class="mb-2 text-xl font-medium text-gray-800 ">
+                          Data Science
+                        </p>
+                        <p class=" text-gray-500 font-semibold  text-md">
+                           Master Data Science skills and take your career to the next level!
+                        </p>
+                        <div class="flex items-center mt-4">
+                           
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-11/12 md:w-80">
+                <a href="/courses/excel.html" class="block w-full h-full">
+                    <!-- <img alt="Placement photo" src="/media/Placement/2.jpg" class="object-cover w-full "/> -->
+                    <div class="w-full p-4 bg-white ">
+                        <p class="font-medium text-purple-600 text-md">
+                            Masters's Course In
+                        </p>
+                        <p class="mb-2 text-xl font-medium text-gray-800 ">
+                          Advance Excel
+                        </p>
+                        <p class=" text-gray-500 font-semibold  text-md">
+                          Elevate Your Skills and Advance Your Career with excel!
+                        </p>
+                        <div class="flex items-center mt-4">
+                           
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-11/12 md:w-80">
+                <a href="/courses/powerBi.html" class="block w-full h-full">
+                    <!-- <img alt="Placement photo" src="/media/Placement/3.jpg" class="object-cover w-full "/> -->
+                    <div class="w-full p-4 bg-white ">
+                        <p class="font-medium text-purple-600 text-md">
+                            Masters's Course In
+                        </p>
+                        <p class="mb-2 text-xl font-medium text-gray-800 ">
+                          PowerBi
+                        </p>
+                        <p class=" text-gray-500 font-semibold  text-md">
+                          Master Business Intelligence and Propel Your Career Forward!
+                        </p>
+                        <div class="flex items-center mt-4">
+                           
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-11/12  md:w-80">
+                <a href="/courses/python.html" class="block w-full h-full">
+                    <!-- <img alt="Placement photo" src="/media/Placement/1.jpg" class="object-cover w-full "/> -->
+                    <div class="w-full p-4 bg-white ">
+                        <p class="font-medium text-purple-600 text-md">
+                            Masters's Course In
+                        </p>
+                        <p class="mb-2 text-xl font-medium text-gray-800 ">
+                          Python
+                        </p>
+                        <p class=" text-gray-500 font-semibold  text-md">
+                          Master Programming and Data Science to Elevate Your Career!
+                        </p>
+                        <div class="flex items-center mt-4">
+                           
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-11/12 md:w-80">
+                <a href="/courses/tableau.html" class="block w-full h-full">
+                    <!-- <img alt="Placement photo" src="/media/Placement/2.jpg" class="object-cover w-full "/> -->
+                    <div class="w-full p-4 bg-white ">
+                        <p class="font-medium text-purple-600 text-md">
+                            Masters's Course In
+                        </p>
+                        <p class="mb-2 text-xl font-medium text-gray-800 ">
+                         Tableau
+                        </p>
+                        <p class=" text-gray-500 font-semibold  text-md">
+                          Transform Data into Insights and Advance Your Career!
+                        </p>
+                        <div class="flex items-center mt-4">
+                           
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-11/12 md:w-80">
+                <a href="/courses/digitalMarketing.html" class="block w-full h-full">
+                    <!-- <img alt="Placement photo" src="/media/Placement/3.jpg" class="object-cover w-full "/> -->
+                    <div class="w-full p-4 bg-white ">
+                        <p class="font-medium text-purple-600 text-md">
+                            Masters's Course In
+                        </p>
+                        <p class="mb-2 text-xl font-medium text-gray-800 ">
+                          SQL
+                        </p>
+                        <p class=" text-gray-500 font-semibold  text-md">
+                          Master Database Management and Boost Your Career!
+                        </p>
+                        <div class="flex items-center mt-4">
+                           
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-11/12  md:w-80">
+              <a href="/pages/corporate.html" class="block w-full h-full">
+                  <!-- <img alt="Placement photo" src="/media/Placement/1.jpg" class="object-cover w-full "/> -->
+                  <div class="w-full p-4 bg-white ">
+                      <p class="font-medium text-purple-600 text-md">
+                          Masters's Course In
+                      </p>
+                      <p class="mb-2 text-xl font-medium text-gray-800 ">
+                        Corporate Training
+                      </p>
+                      <p class=" text-gray-500 font-semibold  text-md">
+                        Excellence: Unlock Your Team’s Full Potential!
+                      </p>
+                      <div class="flex items-center mt-4">
+                         
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-11/12 md:w-80">
+              <a href="/pages/english.html" class="block w-full h-full">
+                  <!-- <img alt="Placement photo" src="/media/Placement/2.jpg" class="object-cover w-full "/> -->
+                  <div class="w-full p-4 bg-white ">
+                      <p class="font-medium text-purple-600 text-md">
+                          Masters's Course In
+                      </p>
+                      <p class="mb-2 text-xl font-medium text-gray-800 ">
+                        Spoken English
+                      </p>
+                      <p class=" text-gray-500 font-semibold  text-md">
+                        Articulate Your Thoughts: Enroll in Our  Course Today!
+                      </p>
+                      <div class="flex items-center mt-4">
+                         
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-11/12 md:w-80">
+              <a href="/courses/computer.html" class="block w-full h-full">
+                  <!-- <img alt="Placement photo" src="/media/Placement/3.jpg" class="object-cover w-full "/> -->
+                  <div class="w-full p-4 bg-white ">
+                      <p class="font-medium text-purple-600 text-md">
+                          Masters's Course In
+                      </p>
+                      <p class="mb-2 text-xl font-medium text-gray-800 ">
+                       Basic Computer Skills
+                      </p>
+                      <p class=" text-gray-500 font-semibold  text-md">
+                        Build a Technically Proficient Workforce!
+                      </p>
+                      <div class="flex items-center mt-4">
+                         
+                      </div>
+                  </div>
+              </a>
+          </div>
+          
+            
+        </div>
+        </div>
+      </section>
+
+      
+    <script src="/globle.js"></script>
+  
+    <script src="/component/header.js"></script>
+    <script>
+      document.body.insertAdjacentHTML("afterbegin", navHtml);
+    </script>
+    <script src="/component/footer.js"></script>
+    <script>
+      document.body.insertAdjacentHTML("beforeend", footer);
+    </script>
+  </body>
+</html>

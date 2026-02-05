@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="120x120" href="/media/fevicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/fevicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/fevicon/favicon-16x16.png">
+    <link rel="manifest" href="/media/fevicon/site.webmanifest">
+    <link rel="mask-icon" href="/media/fevicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/output.css" />
+    <link rel="stylesheet" href="/globle.css" />
+   
+    <link rel="stylesheet" href="/output.css">
+    <title>Data Science</title>
+</head>
+<body class="relative">
+  <header class="absolute w-full top-0 z-50">
+    <nav class="bg-white border border-gray-200   px-2 sm:px-4 py-2.5 rounded   shadow">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="/index.html" class="flex items-center">
+          <span class="self-center text-xl font-semibold whitespace-nowrap  ">
+              
+              <img class="w-40" src="/media/image/logo-1.png" alt="logo">
+              
+          </span>
+        </a>
+    
+        <div class="flex items-center">
+          <button
+            id="menu-toggle"
+            type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200       md:hidden"
+          >
+            <span class="sr-only">Open main menu</span>
+            <!-- Hamburger icon -->
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+    
+        <div
+          class="w-full md:block md:w-auto hidden"
+          id="mobile-menu"
+        >
+          <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+            <li>
+              <a
+                href="/index.html"
+                class="block py-2 pr-4 pl-3   rounded md:bg-transparent  md:p-0  "
+                aria-current="page"
+              >
+                Home
+              </a>
+            </li>
+            <li class="md:block hidden">
+              <div class="group relative cursor-pointer ">
+            
+                <div class="">
+                    <a class="menu-hover block py-2 pr-4 pl-3 md:text-blue-700  rounded md:bg-transparent md:p-0" onClick="">
+                        Courses
+                    </a>
+                    <!-- <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span> -->
+                </div>
+        
+                <div
+                    class="invisible absolute z-50 flex w-48 flex-col bg-white  py-1 px-4  shadow-xl group-hover:visible">
+        
+                    <a href="/courses/datascience.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Data Science
+                    </a>
+        
+                    <a href="/courses/powerBi.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                       PowerBi
+                    </a>
+        
+                    <a href="/courses/tableau.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Tableau
+                    </a>
+        
+                    <a href="/courses/python.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Python
+                    </a>
+        
+                    <a href="/courses/excel.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Advance Excel
+                    </a>
+        
+                    <a href="/courses/sql.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        SQL
+                    </a>
+        
+                    <a href="/courses/digitalMarketing.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Digital Marketing
+                    </a>
+                    <a href="/courses/computer.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Basic Computer Courses
+                    </a>
+                    <a href="/pages/corporate.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Corporate Training
+                    </a>
+                    <a href="/pages/english.html" class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Spoken English
+                    </a>
+                   
+        
+                </div>
+            </div>
+            </li>
+            <li class="md:hidden block">
+              <a
+              href="/pages/course.html"
+              class="py-2 pr-4 pl-3 text-gray-700 border-b block border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0         "
+            >
+              Courses
+            </a>
+            </li>
+            <li>
+              <a
+                href="/pages/corporate.html"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0         "
+              >
+                Corporate Training
+              </a>
+            </li>
+            <li>
+              <a
+                href="/pages/english.html"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0         "
+              >
+               Spoken English
+              </a>
+            </li>
+            <li>
+              <a
+                href="/pages/about.html"
+                class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="/pages/placement.html"
+                class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0       "
+              >
+                Placement
+              </a>
+            </li>
+            <li>
+              <a
+                href="/pages/contact.html"
+                class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0       "
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+    </nav>
+  </header>
+    <section>
+        <div class="relative h-screen overflow-hidden ">
+          <img src="/media/image/ai.jpg" class="absolute hero_img_d opacity-65 object-cover w-full h-full"/>
+          <div class="absolute inset-0 bg-black opacity-25">
+          </div>
+         
+          <div class="container relative z-10 h-screen flex items-center px-6  mx-auto  ">
+              <div class="relative z-10 flex flex-col items-start lg:w-3/5 xl:w-2/5">
+                  <span class="font-bold text-yellow-400 pt-10 uppercase">
+                     Moonstone Analytics
+                  </span>
+                  <h1 class="mt-4 text-4xl font-bold leading-tight text-white sm:text-3xl">
+                      Data Science:Where  
+                      <br/>
+                      Number
+                      Tells Stories  by nature
+                  </h1>
+                  <div class="pt-4">
+                    <svg width="117" height="20" viewBox="0 0 117 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M80.1532 3.408C81.4202 1.136 82.0532 0 83.0002 0C83.9472 0 84.5802 1.136 85.8472 3.408L86.1752 3.996C86.5352 4.642 86.7152 4.965 86.9952 5.178C87.2752 5.391 87.6252 5.47 88.3252 5.628L88.9612 5.772C91.4212 6.329 92.6502 6.607 92.9432 7.548C93.2352 8.488 92.3972 9.469 90.7202 11.43L90.2862 11.937C89.8102 12.494 89.5712 12.773 89.4642 13.117C89.3572 13.462 89.3932 13.834 89.4652 14.577L89.5312 15.254C89.7842 17.871 89.9112 19.179 89.1452 19.76C88.3792 20.342 87.2272 19.811 84.9252 18.751L84.3282 18.477C83.6742 18.175 83.3472 18.025 83.0002 18.025C82.6532 18.025 82.3262 18.175 81.6722 18.477L81.0762 18.751C78.7732 19.811 77.6212 20.341 76.8562 19.761C76.0892 19.179 76.2162 17.871 76.4692 15.254L76.5352 14.578C76.6072 13.834 76.6432 13.462 76.5352 13.118C76.4292 12.773 76.1902 12.494 75.7142 11.938L75.2802 11.43C73.6032 9.47 72.7652 8.489 73.0572 7.548C73.3502 6.607 74.5802 6.328 77.0402 5.772L77.6762 5.628C78.3752 5.47 78.7242 5.391 79.0052 5.178C79.2852 4.965 79.4652 4.642 79.8252 3.996L80.1532 3.408Z" fill="#FFD233"/>
+                      <path d="M104.153 3.408C105.42 1.136 106.053 0 107 0C107.947 0 108.58 1.136 109.847 3.408L110.175 3.996C110.535 4.642 110.715 4.965 110.995 5.178C111.275 5.391 111.625 5.47 112.325 5.628L112.961 5.772C115.421 6.329 116.65 6.607 116.943 7.548C117.235 8.488 116.397 9.469 114.72 11.43L114.286 11.937C113.81 12.494 113.571 12.773 113.464 13.117C113.357 13.462 113.393 13.834 113.465 14.577L113.531 15.254C113.784 17.871 113.911 19.179 113.145 19.76C112.379 20.342 111.227 19.811 108.925 18.751L108.328 18.477C107.674 18.175 107.347 18.025 107 18.025C106.653 18.025 106.326 18.175 105.672 18.477L105.076 18.751C102.773 19.811 101.621 20.341 100.856 19.761C100.089 19.179 100.216 17.871 100.469 15.254L100.535 14.578C100.607 13.834 100.643 13.462 100.535 13.118C100.429 12.773 100.19 12.494 99.7142 11.938L99.2802 11.43C97.6032 9.47 96.7652 8.489 97.0572 7.548C97.3502 6.607 98.5802 6.328 101.04 5.772L101.676 5.628C102.375 5.47 102.724 5.391 103.005 5.178C103.285 4.965 103.465 4.642 103.825 3.996L104.153 3.408Z" fill="#FFD233"/>
+                      <path d="M31.1532 3.408C32.4202 1.136 33.0532 0 34.0002 0C34.9472 0 35.5802 1.136 36.8472 3.408L37.1752 3.996C37.5352 4.642 37.7152 4.965 37.9952 5.178C38.2752 5.391 38.6252 5.47 39.3252 5.628L39.9612 5.772C42.4212 6.329 43.6502 6.607 43.9432 7.548C44.2352 8.488 43.3972 9.469 41.7202 11.43L41.2862 11.937C40.8102 12.494 40.5712 12.773 40.4642 13.117C40.3572 13.462 40.3932 13.834 40.4652 14.577L40.5312 15.254C40.7842 17.871 40.9112 19.179 40.1452 19.76C39.3792 20.342 38.2272 19.811 35.9252 18.751L35.3282 18.477C34.6742 18.175 34.3472 18.025 34.0002 18.025C33.6532 18.025 33.3262 18.175 32.6722 18.477L32.0762 18.751C29.7732 19.811 28.6212 20.341 27.8562 19.761C27.0892 19.179 27.2162 17.871 27.4692 15.254L27.5352 14.578C27.6072 13.834 27.6432 13.462 27.5352 13.118C27.4292 12.773 27.1902 12.494 26.7142 11.938L26.2802 11.43C24.6032 9.47 23.7652 8.489 24.0572 7.548C24.3502 6.607 25.5802 6.328 28.0402 5.772L28.6762 5.628C29.3752 5.47 29.7242 5.391 30.0052 5.178C30.2852 4.965 30.4652 4.642 30.8252 3.996L31.1532 3.408Z" fill="#FFD233"/>
+                      <path d="M56.1532 3.408C57.4202 1.136 58.0532 0 59.0002 0C59.9472 0 60.5802 1.136 61.8472 3.408L62.1752 3.996C62.5352 4.642 62.7152 4.965 62.9952 5.178C63.2752 5.391 63.6252 5.47 64.3252 5.628L64.9612 5.772C67.4212 6.329 68.6502 6.607 68.9432 7.548C69.2352 8.488 68.3972 9.469 66.7202 11.43L66.2862 11.937C65.8102 12.494 65.5712 12.773 65.4642 13.117C65.3572 13.462 65.3932 13.834 65.4652 14.577L65.5312 15.254C65.7842 17.871 65.9112 19.179 65.1452 19.76C64.3792 20.342 63.2272 19.811 60.9252 18.751L60.3282 18.477C59.6742 18.175 59.3472 18.025 59.0002 18.025C58.6532 18.025 58.3262 18.175 57.6722 18.477L57.0762 18.751C54.7732 19.811 53.6212 20.341 52.8562 19.761C52.0892 19.179 52.2162 17.871 52.4692 15.254L52.5352 14.578C52.6072 13.834 52.6432 13.462 52.5352 13.118C52.4292 12.773 52.1902 12.494 51.7142 11.938L51.2802 11.43C49.6032 9.47 48.7652 8.489 49.0572 7.548C49.3502 6.607 50.5802 6.328 53.0402 5.772L53.6762 5.628C54.3752 5.47 54.7242 5.391 55.0052 5.178C55.2852 4.965 55.4652 4.642 55.8252 3.996L56.1532 3.408Z" fill="#FFD233"/>
+                      <path d="M7.15323 3.408C8.42023 1.136 9.05323 0 10.0002 0C10.9472 0 11.5802 1.136 12.8472 3.408L13.1752 3.996C13.5352 4.642 13.7152 4.965 13.9952 5.178C14.2752 5.391 14.6252 5.47 15.3252 5.628L15.9612 5.772C18.4212 6.329 19.6502 6.607 19.9432 7.548C20.2352 8.488 19.3972 9.469 17.7202 11.43L17.2862 11.937C16.8102 12.494 16.5712 12.773 16.4642 13.117C16.3572 13.462 16.3932 13.834 16.4652 14.577L16.5312 15.254C16.7842 17.871 16.9112 19.179 16.1452 19.76C15.3792 20.342 14.2272 19.811 11.9252 18.751L11.3282 18.477C10.6742 18.175 10.3472 18.025 10.0002 18.025C9.65323 18.025 9.32623 18.175 8.67223 18.477L8.07623 18.751C5.77323 19.811 4.62124 20.341 3.85624 19.761C3.08924 19.179 3.21623 17.871 3.46923 15.254L3.53523 14.578C3.60723 13.834 3.64323 13.462 3.53523 13.118C3.42923 12.773 3.19024 12.494 2.71424 11.938L2.28024 11.43C0.603235 9.47 -0.234765 8.489 0.057235 7.548C0.350235 6.607 1.58024 6.328 4.04024 5.772L4.67624 5.628C5.37524 5.47 5.72424 5.391 6.00524 5.178C6.28524 4.965 6.46523 4.642 6.82523 3.996L7.15323 3.408Z" fill="#FFD233"/>
+                      </svg>
+                      
+                  </div>
+                  <a href="/courses/datascience.html" class="block px-4 py-3 mt-10 text-lg font-bold text-gray-800 uppercase bg-white rounded-lg hover:bg-gray-100">
+                      Start Now
+                  </a>
+                  <p class="text-white pt-4 font-semibold text-2xl">
+                    Unlock your Potential Become <br>
+                    <span class="text-6xl font-bold count" data-count="100">0</span><span class="text-6xl font-bold ">+</span> <br>
+        
+                    Job Ready
+                  </p>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-slate-100 py-6 sm:py-12">
+          <div class="min-h-28 ">
+            <div class="max-w-screen-lg mx-auto py-4">
+              <h2 class="font-bold text-center text-6xl text-slate-700 font-display">
+                Data Science Mastery
+              </h2>
+              <p class="text-center mt-4 font-medium text-slate-500">- Introduction -</p>
+        
+              <div class="rounded-lg overflow-hidden mt-10 relative before:absolute before:z-20 before:bg-black before:h-full before:w-full before:bg-gradient-to-tr before:from-black before:to-purple-600 before:opacity-80">
+                
+                <video src="/media/image/02bc94f3-d549-4856-9cc6-155a55f2bd2f.mp4" autoplay loop  muted class="absolute z-10 object-cover h-80 w-full"></video>
+                <a href="" class="md:absolute z-20 hidden   top-1/2  right-20 text-white -translate-y-1/2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+                  </svg>
+                </a>
+                <div class="relative z-20 p-10 h-full md:w-1/2">
+                  <h2 class="text-white text-3xl font-semibold">Analytical Excellence</h2>
+                  
+                  <p class="text-sm text-slate-200 mt-4">
+                    Unlock the power of data with our cutting-edge Data Science program. Dive into the world of analytics, machine learning, and predictive modeling. Our comprehensive curriculum equips you with the skills to extract valuable insights, drive innovation, and make informed decisions. Join us on a journey of discovery and transform data into actionable intelligence.
+        
+                  </p>
+                  
+                </div>
+              </div>
+        
+             
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class=" w-11/12 mx-auto p-5 my-12">
+       <h2 class="text-center text-xl border-b-2 pb-5">Excellence defined by number </h2>
+        <div class="flex justify-around flex-wrap items-center py-7 border-b-2 ">
+          <div class=" overflow-hidden   max-h-[14rem]">
+              <div class="flex items-center ">
+                <div class="pr-3">
+                 
+                    
+                    
+                </div>
+                <div>
+                  <div class="flex border-b-4 ">
+                    <h1 class="  text-xl font-semibold count" data-count="200">0</h1><span class=" text-xl px-1">+</span>
+                  </div>
+                  <p class="">Hours Content</p>
+                </div>
+              </div>
+          </div>
+          <div class=" overflow-hidden   max-h-[14rem]">
+              <div class="flex items-center ">
+                <div class="pr-3">
+                 
+                    
+                    
+                </div>
+                <div>
+                  <div class="flex border-b-4 ">
+                    <h1 class="  text-xl font-semibold count" data-count="5">0</h1>
+                    <span class="  text-xl px-1">+</span>
+                  </div>
+                  <p class="">Industry level project </p>
+                </div>
+              </div>
+          </div>
+          <div class=" overflow-hidden   max-h-[14rem]">
+              <div class="flex items-center ">
+                <div class="pr-3">
+                 
+                    
+                    
+                </div>
+                <div>
+                  <div class="flex border-b-4">
+                    <h1 class=" text-xl font-semibold count" data-count="7">0</h1><span class="  text-xl px-1">+</span>
+                  </div>
+                  <p class="">Tools covered </p>
+                </div>
+              </div>
+          </div>
+          <div class=" overflow-hidden   max-h-[14rem]">
+              <div class="flex items-center ">
+                <div class="pr-3">
+                 
+                    
+                    
+                </div>
+                <div>
+                  <div class="flex border-b-4">
+                    <h1 class="  text-xl font-semibold count" data-count="20">0</h1><span class="  text-xl px-1">+</span>
+                  </div>
+                  <p class="">Quiz & Assignment</p>
+                </div>
+              </div>
+          </div>
+         
+        </div>
+        
+    </section>
+
+    <section>
+      
+<div class="bg-white  ">
+  <div class="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
+      <h2 class="text-3xl font-extrabold text-black sm:text-4xl">
+          <span class="block">
+            Still unsure?
+          </span>
+          <span class="block text-indigo-500">
+           Download our brochure for an in-depth overview
+          </span>
+      </h2>
+      <div class="lg:mt-0 lg:flex-shrink-0">
+          <div class="mt-12 inline-flex rounded-md shadow">
+              <a href="/media/course_pdf/dataScience.pdf" target="_blank" type="button" class="py-4 px-6  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                 Download PDF
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+
+    </section>
+    <section >
+      <!-- component -->
+<div class="max-w-screen-xl mx-auto px-5 PY-10 bg-gradient-to-r from-purple-900 to-indigo-900 min-h-sceen">
+<div class="flex flex-col  items-center">
+  <h2 class="font-bold text-white text-3xl mt-5 tracking-tight">
+    Here's a quick glimpse into our dynamic course structure, offering a sneak peek into the extensive world of data science education!
+  </h2>
+  
+</div>
+<div class="grid divide-y text-white  pb-10 divide-neutral-200 max-w-xl mx-auto mt-8">
+  <div class="py-5">
+    <details class="group">
+      <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+        <span> <span&#10019;</span> Introduction to Data Science.</span>
+        <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+            </span>
+      </summary>
+      <ul style="list-style-type:disc"  class="text-white mx-4  mt-3 group-open:animate-fadeIn">
+        <li>Overview of data science and its applications</li>
+        <li>Introduction to key concepts and terminology</li>
+        <li>Exploring the data science workflow and tools</li>
+      </ul>
+    </details>
+  </div>
+  <div class="py-5">
+    <details class="group">
+      <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+        <span> <span&#10019;</span> Power BI for Data Visualization.</span>
+        <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+            </span>
+      </summary>
+      <ul style="list-style-type:disc"  class="text-white mx-4  mt-3 group-open:animate-fadeIn">
+        <li>Introduction to Power BI and its capabilities</li>
+        <li>Building interactive dashboards and reports</li>
+        <li>Connecting to data sources and transforming data for visualization</li>
+        <li>Creating visualizations such as charts, graphs, and maps</li>
+        <li> Publishing and sharing reports with stakeholders</li>
+      </ul>
+    </details>
+  </div>
+  <div class="py-5">
+    <details class="group">
+      <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+        <span> <span&#10019;</span> Tableau for Data Visualization</span>
+        <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+            </span>
+      </summary>
+      <ul style="list-style-type:disc"  class="text-white mx-4  mt-3 group-open:animate-fadeIn">
+        <li>Overview of Tableau and its features</li>
+        <li>Building interactive dashboards and visualizations</li>
+        <li>Connecting to various data sources and integrating data for analysis</li>
+        <li>Creating and customizing visualizations to convey insights effectively</li>
+        <li>Collaborating and sharing visualizations with team members and stakeholders</li>
+      </ul>
+    </details>
+  </div>
+  <div class="py-5">
+    <details class="group">
+      <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+        <span> <span&#10019;</span> Introduction to SQL.</span>
+        <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+            </span>
+      </summary>
+      <ul style="list-style-type:disc"  class="text-white mx-4  mt-3 group-open:animate-fadeIn">
+        <li>Overview of SQL and its features</li>
+        <li> Data creation, fetching and manipulation</li>
+        <li>Advance Techniques for Data Analysis</li>
+        <li>SQL for Data Warehousing and Business Intelligence</li>
+      </ul>
+    </details>
+  </div>
+  <div class="py-5">
+    <details class="group">
+      <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+        <span> <span&#10019;</span> Analytics with Excel.</span>
+        <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+            </span>
+      </summary>
+      <ul style="list-style-type:disc"  class="text-white mx-4  mt-3 group-open:animate-fadeIn">
+        <li>Basics of Excel</li>
+        <li>Important tools and function of Excel</li>
+        <li>Data Management and Analysis using Excel</li>
+        <li>Dashboard creation in Excel</li>
+      </ul>
+    </details>
+  </div>
+  <div class="py-5">
+    <details class="group">
+      <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+        <span> <span&#10019;</span> Python Programing Language.</span>
+        <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+            </span>
+      </summary>
+      <ul style="list-style-type:disc"  class="text-white mx-4  mt-3 group-open:animate-fadeIn">
+        <li>Introduction to python</li>
+        <li>Data Structure in python</li>
+        <li>Advance python functions & functional programing</li>
+        <li>Object-Oriented Programming (OOP) in python</li>
+        <li>Error Handling in python</li>
+      </ul>
+    </details>
+  </div>
+  <div class="py-5">
+    <details class="group">
+      <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+        <span> <span&#10019;</span> Data Manipulation and Cleaning using Python.</span>
+        <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+            </span>
+      </summary>
+      <ul style="list-style-type:disc"  class="text-white mx-4  mt-3 group-open:animate-fadeIn">
+        <li>Techniques for collecting, cleaning, and preprocessing data</li>
+        <li> Data manipulation using Python libraries (such as Pandas and Numpy)</li>
+        <li>Exploratory Data Analysis (EDA) with Matplotlib and Seaborn</li>
+        <li>Introduction to data visualization principles and best practices</li>
+        <li>Hands-on exercises using Matplotlib for basic plotting and customization</li>
+        <li>Utilizing Seaborn for advanced statistical visualization and plotting</li>
+      </ul>
+    </details>
+  </div>
+  <div class="py-5">
+    <details class="group">
+      <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+        <span> <span&#10019;</span> Advanced Analytics with Alteryx.</span>
+        <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+            </span>
+      </summary>
+      <ul style="list-style-type:disc"  class="text-white mx-4  mt-3 group-open:animate-fadeIn">
+        <li>Overview of Alteryx for data preparation and predictive analytics</li>
+        <li>Building workflows for data blending, enrichment.</li>
+        <li>Automating repetitive tasks and creating reusable workflows</li>
+        <li>Project deployment in gallery</li>
+      </ul>
+    </details>
+  </div>
+  <div class="py-5">
+    <details class="group">
+      <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+        <span> <span&#10019;</span> Statistical Analysis with Python.</span>
+        <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+            </span>
+      </summary>
+      <ul style="list-style-type:disc"  class="text-white mx-4  mt-3 group-open:animate-fadeIn">
+        <li>Fundamentals of statistics for data analysis</li>
+        <li>Using Python libraries (such as NumPy and Pandas) for statistical analysis</li>
+        <li>Hypothesis testing, regression analysis, and other statistical techniques</li>
+      </ul>
+    </details>
+  </div>
+  <div class="py-5">
+    <details class="group">
+      <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+        <span> <span&#10019;</span>Machine Learning Basics with Python.</span>
+        <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+            </span>
+      </summary>
+      <ul style="list-style-type:disc"  class="text-white mx-4  mt-3 group-open:animate-fadeIn">
+        <li>Introduction to machine learning concepts and algorithms</li>
+        <li> Hands-on implementation of machine learning models using Python (scikit-learn)</li>
+        <li>Model evaluation and validation techniques</li>
+      </ul>
+    </details>
+  </div>
+  <div class="py-5">
+    <details class="group">
+      <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+        <span> <span&#10019;</span>Advanced Machine Learning and AI.</span>
+        <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+            </span>
+      </summary>
+      <ul style="list-style-type:disc"  class="text-white mx-4  mt-3 group-open:animate-fadeIn">
+        <li>Deep dive into advanced machine learning algorithms (e.g., neural networks, ensemble methods)</li>
+        <li>Introduction to artificial intelligence (AI) concepts and applications</li>
+        <li>Using Python libraries (such as TensorFlow and Keras) for advanced ML and AI</li>
+      </ul>
+    </details>
+  </div>
+  <div class="py-5">
+    <details class="group">
+      <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+        <span> <span&#10019;</span>Capstone Project.</span>
+        <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+            </span>
+      </summary>
+      <ul style="list-style-type:disc"  class="text-white mx-4  mt-3 group-open:animate-fadeIn">
+        <li>Culminating project where students apply their skills to a real-world data science problem</li>
+        <li>Guidance and mentorship from instructors throughout the project</li>
+        <li>Presentation of project findings to peers and industry professionals</li>
+      </ul>
+    </details>
+  </div>
+  <div class="py-5">
+    <details class="group">
+      <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+        <span> <span&#10019;</span>Career Development and Professional Skills.</span>
+        <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+            </span>
+      </summary>
+      <ul style="list-style-type:disc"  class="text-white mx-4  mt-3 group-open:animate-fadeIn">
+        <li>Resume building and interview preparation workshops</li>
+        <li>Networking opportunities with industry professionals</li>
+        <li>Job placement assistance and alumni support</li>
+      </ul>
+    </details>
+  </div>
+  
+</div>
+</div>
+
+
+     </section>
+     <section class="bg-gradient-to-r from-purple-900 to-indigo-900 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl font-extrabold text-white sm:text-3xl">
+            Portfolio:Real-World <br>Applications of Data Science
+          </h2>
+          <p class="mt-4  text-purple-200">
+            Welcome to our portfolio section, where we highlight the real-world impact of data science skills learned at Moonstone Data Science Institute. Explore the diverse projects and case studies that demonstrate the practical applications of data science in various industries and domains.
+          </p>
+        </div>
+    
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Basic Plan -->
+          <div class="bg-white bg-opacity-10 rounded-lg shadow-lg p-3 relative overflow-hidden">
+            <div class="px-16">
+              <img class="w-full" src="/media/image/HEALTH.png" alt="health">
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold text-white">Healthcare Insurance Analytics</h3>
+              <p class="mt-4 text-justify text-sm text-purple-200">In collaboration with a healthcare insurance provider, our analytics team optimized claims processing efficiency and reduced turnaround times. Leveraging data analytics techniques, the project resulted in faster reimbursements, proactive fraud detection, and operational efficiency gains.</p>
+            </div>
+           
+            
+          
+          </div>
+    
+          <!-- Pro Plan -->
+          <div class="bg-white bg-opacity-10 rounded-lg shadow-lg p-3 relative overflow-hidden">
+            <div class="px-16">
+              <img class="w-full" src="/media/image/piggy_bank.png" alt="health">
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold text-white">Banking Data Analytics</h3>
+              <p class="mt-4 text-sm text-justify text-purple-200">Our analytics team collaborated with a leading bank to analyze customer transaction data, demographic information, and banking behaviors. Through advanced analytics techniques, we gained insights into customer preferences, identified opportunities for personalized services, and developed predictive models for risk management.</p>
+            </div>
+           
+            
+          
+          </div>
+    
+    
+          <!-- Enterprise Plan -->
+          <div class="bg-white bg-opacity-10 rounded-lg shadow-lg p-3 relative overflow-hidden">
+            <div class="px-16">
+              <img class="w-full" src="/media/image/group_p.png" alt="group_p">
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl pt-3 font-semibold  text-white">Customer Behavior Analysis </h3>
+              <p class="mt-4 text-sm text-justify text-purple-200">Working with a retail client, our analysts analyzed customer transaction data, behavior patterns, and preferences. The insights obtained facilitated targeted marketing campaigns, personalized recommendations, and improved customer satisfaction.</p>
+            </div>
+           
+            
+          
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    <section class="pt-4">
+        
+      <h1 class="md:text-3xl text-center text-2xl pb-2 pt-2">
+        <span class="text-purple-700 font-bold"> Dive </span>    into the realm where data transforms into actionable insights.
+      </h1>
+      <div class="flex py-8 flex-wrap w-full">
+        
+        <div class="w-1/2 px-2 md:px-0 shadow-2xl h-auto flex justify-center items-center">
+          <img src="/media/courses/dataAn.jpg" alt="corporate img" />
+        </div>
+
+        <div class="flex flex-col px-2 md:px-0 w-full md:w-1/2">
+          <div
+            class="flex flex-col justify-center px-2 pt-8 my-auto md:justify-start md:pt-0 md:px-24 lg:px-32"
+          >
+            <h2 class="text-2xl mb-4 pb-1 capitalize border-b border-purple-900">
+              <span class="text-purple-700">Exploring</span> Data Science
+            </h2>
+            <p class="text-justify text-base text-gray-500">
+              <span class="text-purple-700">Data science</span>
+               is the interdisciplinary field that extracts knowledge and insights from data. By combining statistics, computer science, and domain expertise, data scientists uncover valuable patterns and trends, driving informed decision-making. From predictive analytics to machine learning, data science empowers organizations to unlock the full potential of their data for innovation and growth. Welcome to the dynamic world of data science, where possibilities are limitless and discoveries are waiting to be made.
+            </p>
+            <div class="flex">
+              
+              <a
+                href="/pages/contact.html"
+                target="_blank"
+                type="submit"
+                class="w-1/3 mt-4 px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-purple-700 shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2"
+              >
+                <span class="w-full uppercase">Query </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-6">
+    
+      <h1 class="md:text-5xl text-2xl text-center pb-2 pt-2">
+        <span class="text-purple-700 font-bold">Tools </span> and Technologies.
+      </h1>
+      <p class="w-2/3 mx-auto text-sm text-center text-slate-500 ">
+          The field of data analytics is supported by a wide range of tools and technologies, including</p>
+  <div class="flex-wrap  pb-7 items-center justify-center gap-8 text-center sm:flex">
+    <div class="w-full  flex items-center justify-center  h-[330px] mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
+        
+      <div class="px-2 py-1 mb-4 bg-white border-2 border-t-8 border-purple-600 rounded w-72 ">
+          <div class="w-full">
+              <h1 class="text-3xl text-center md:mt-5 ">
+                  Data Visualization
+              </h1>
+              <ul class="p-1 mt-5 text-gray-600 text-md ">
+                  <li class="flex py-1 mb-1">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 font-bold text-indigo-800 ">
+                          <path d="M5 13l4 4L19 7">
+                          </path>
+                      </svg>
+                      Power BI
+                  </li>
+                  <li class="flex py-1 mb-1">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 font-bold text-indigo-800 ">
+                          <path d="M5 13l4 4L19 7">
+                          </path>
+                      </svg>
+                      Tableau
+                  </li>
+                  <li class="flex py-1 mb-1">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 font-bold text-indigo-800 ">
+                          <path d="M5 13l4 4L19 7">
+                          </path>
+                      </svg>
+                      Python libraries
+                  </li>
+                  <li class="flex py-1 mb-1">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 font-bold text-indigo-800 ">
+                          <path d="M5 13l4 4L19 7">
+                          </path>
+                      </svg>
+                      Matplotlib and Seaborn
+                  </li>
+              </ul>
+          </div>
+          </div>
+          
+          
+    </div>
+    <div class="w-full flex items-center justify-center  h-[330px] mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
+        
+      <div class="px-2 py-1 mb-4 bg-white border-2 border-t-8 border-purple-600 rounded w-72 ">
+          <div class="w-full">
+              <h1 class="text-3xl text-center md:mt-5 ">
+                  Statistical Analysis
+              </h1>
+              <ul class="p-1 mt-5 text-gray-600 text-md ">
+                  <li class="flex py-1 mb-1">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 font-bold text-indigo-800 ">
+                          <path d="M5 13l4 4L19 7">
+                          </path>
+                      </svg>
+                      Python
+                  </li>
+                  <li class="flex py-1 mb-1">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 font-bold text-indigo-800 ">
+                          <path d="M5 13l4 4L19 7">
+                          </path>
+                      </svg>
+                      NumPy 
+                  </li>
+                  <li class="flex py-1 mb-1">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 font-bold text-indigo-800 ">
+                          <path d="M5 13l4 4L19 7">
+                          </path>
+                      </svg>
+                      Pandas
+                  </li>
+                  <li class="flex py-1 mb-1">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 font-bold text-indigo-800 ">
+                          <path d="M5 13l4 4L19 7">
+                          </path>
+                      </svg>
+                      SAS
+                  </li>
+              </ul>
+          </div>
+          </div>
+          
+          
+    </div>
+    <div class="w-full flex items-center justify-center  h-[330px] mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
+        
+      <div class="px-2 py-1 mb-4 bg-white border-2 border-t-8 border-purple-600 rounded w-72 ">
+          <div class="w-full">
+              <h1 class="text-3xl text-center md:mt-5 ">
+                  Other Tools
+              </h1>
+              <ul class="p-1 mt-5 text-gray-600 text-md ">
+                  <li class="flex py-1 mb-1">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 font-bold text-indigo-800 ">
+                          <path d="M5 13l4 4L19 7">
+                          </path>
+                      </svg>
+                      Excel
+                  </li>
+                  <li class="flex py-1 mb-1">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 font-bold text-indigo-800 ">
+                          <path d="M5 13l4 4L19 7">
+                          </path>
+                      </svg>
+                      SQL
+                  </li>
+                  <li class="flex py-1 mb-1">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 font-bold text-indigo-800 ">
+                          <path d="M5 13l4 4L19 7">
+                          </path>
+                      </svg>
+                      Machine Learning
+                  </li>
+                  <li class="flex py-1 mb-1">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 font-bold text-indigo-800 ">
+                          <path d="M5 13l4 4L19 7">
+                          </path>
+                      </svg>
+                      Big Data Technologies
+                  </li>
+              </ul>
+          </div>
+          </div>
+          
+          
+    </div>
+  </div>
+      
+          
+    </section>
+    <section class="py-6">
+      <h1 class="md:text-3xl text-2xl text-center pb-2 pt-2">
+          <span class="text-purple-700 font-bold">Applications  </span> of Data Analytics
+        </h1>
+        <p class="w-2/3 mx-auto text-sm text-center text-slate-500 ">
+            The field of data analytics is supported by a wide range of tools and technologies, including</p>
+<div class="relative p-4 bg-white  ">
+  <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-center">
+      <div class="lg:col-start-2 md:pl-20">
+         
+          <ul class="mt-10">
+              <li>
+                  <div class="flex">
+                      <div class="flex-shrink-0">
+                          <div class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                              <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                                  </path>
+                              </svg>
+                          </div>
+                      </div>
+                      <div class="ml-4">
+                          <h5 class="text-lg font-bold leading-6 text-gray-900  ">
+                              Healthcare
+                          </h5>
+                          <p class="mt-2 text-base leading-6 text-gray-500 ">
+                              Improving patient outcomes, optimizing hospital operations, and predicting disease outbreaks.
+                          </p>
+                      </div>
+                  </div>
+              </li>
+              <li class="mt-10">
+                  <div class="flex">
+                      <div class="flex-shrink-0">
+                          <div class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                              <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                                  </path>
+                              </svg>
+                          </div>
+                      </div>
+                      <div class="ml-4">
+                          <h5 class="text-lg font-bold leading-6 text-gray-900  ">
+                              Finance
+                          </h5>
+                          <p class="mt-2 text-base leading-6 text-gray-500 dark:text-gray-300">
+                              Detecting fraud, managing risk, and optimizing investment portfolios.
+                          </p>
+                      </div>
+                  </div>
+              </li>
+              <li class="mt-10">
+                  <div class="flex">
+                      <div class="flex-shrink-0">
+                          <div class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                              <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                                  </path>
+                              </svg>
+                          </div>
+                      </div>
+                      <div class="ml-4">
+                          <h5 class="text-lg font-bold leading-6 text-gray-900  ">
+                              Manufacturing
+                          </h5>
+                          <p class="mt-2 text-base leading-6 text-gray-500 dark:text-gray-300">
+                              Optimizing production processes, reducing downtime, and improving quality control.
+                          </p>
+                      </div>
+                  </div>
+              </li>
+              <li class="mt-10">
+                  <div class="flex">
+                      <div class="flex-shrink-0">
+                          <div class="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                              <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                                  </path>
+                              </svg>
+                          </div>
+                      </div>
+                      <div class="ml-4">
+                          <h5 class="text-lg font-bold leading-6 text-gray-900  ">
+                              Marketing
+                          </h5>
+                          <p class="mt-2 text-base leading-6 text-gray-500 dark:text-gray-300">
+                              Targeting the right audience, measuring campaign effectiveness, and personalizing customer experiences.
+                          </p>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+      </div>
+      <div class="relative mt-10 lg:-mx-4 flex justify-center items-center  relative-20 lg:mt-0 lg:col-start-1">
+          <div class="relative space-y-4">
+              <div class="flex items-end justify-center space-x-4 lg:justify-start">
+                  <img class="w-32 rounded-lg shadow-lg md:w-56" width="200" src="/media/image/manufact.jpg" alt="1"/>
+                  <img class="w-40 rounded-lg shadow-lg md:w-64" width="260" src="/media/image/health.jpg" alt="2"/>
+              </div>
+              <div class="flex items-start justify-center ml-12 space-x-4 lg:justify-start">
+                  <img class="w-24 rounded-lg shadow-lg md:w-40" width="170" src="/media/image/finance.jpg" alt="3"/>
+                  <img class="w-32 rounded-lg shadow-lg md:w-56" width="200" src="/media/image/marketing.jpg" alt="4"/>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+    </section>
+    <section class="py-6">
+    
+        <h1 class="md:text-5xl text-2xl text-center pb-2 pt-2">
+          <span class="text-purple-700 font-bold">How</span> Can we help you.
+        </h1>
+        <p class="w-2/3 mx-auto text-sm text-center text-slate-500 ">
+          Embarking on a journey in data science is an exciting opportunity and we at Moonstone Data Science Institute are confident that we can help you succeed. Our team is dedicated to providing personalized support to meet your unique needs and aspirations every step of the way</p>
+    <div class="flex-wrap items-center justify-center gap-8 text-center sm:flex">
+      <div class="w-full px-4 py-4 h-[330px] mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
+          <div class="flex-shrink-0">
+              <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
+                  <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                      </path>
+                  </svg>
+              </div>
+          </div>
+          <h3 class="py-4 text-2xl font-semibold text-gray-700 sm:text-xl">
+            Get Expert Tips for Choosing Courses!
+          </h3>
+          <p class="py-4 text-gray-500 ">
+            Need help picking the right course? Our friendly advisors are happy to guide you through our programs and find the one that matches your interests and career goals.
+          </p>
+      </div>
+      <div class="w-full px-4 py-4 h-[330px] mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
+          <div class="flex-shrink-0">
+              <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
+                  <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                      </path>
+                  </svg>
+              </div>
+          </div>
+          <h3 class="py-4 text-2xl font-semibold text-gray-700 sm:text-xl">
+            Enrollment Assistance
+          </h3>
+          <p class="py-4 text-gray-500 ">
+            Enrolling can be easily navigated with our expert guidance. If you have any questions about prerequisites, scheduling, or payment options, rest assured - we have the answers. Let us help you through it all.
+          </p>
+      </div>
+      <div class="w-full px-4 py-4 h-[330px] mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
+          <div class="flex-shrink-0">
+              <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
+                  <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                      </path>
+                  </svg>
+              </div>
+          </div>
+          <h3 class="py-4 text-2xl font-semibold text-gray-700 sm:text-xl">
+            Confident Career Guidance
+          </h3>
+          <p class="py-4 text-gray-500 ">
+            Thinking about your future career path in data science? Our experienced career counselors can provide valuable insights and advice to help you chart a Path towards success in the field
+          </p>
+      </div>
+      <div class="w-full px-4 py-4 h-[330px] mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
+          <div class="flex-shrink-0">
+              <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
+                  <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                      </path>
+                  </svg>
+              </div>
+          </div>
+          <h3 class="py-4 text-2xl font-semibold text-gray-700 sm:text-xl">
+            Job Placement Support
+          </h3>
+          <p class="py-4 text-gray-500 ">
+            Looking to transition into a data science role or advance your career? Our dedicated job placement team offers resume assistance, interview preparation, and networking opportunities to help you land your dream job.
+          </p>
+      </div>
+      <div class="w-full px-4 py-4 h-[330px] mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
+          <div class="flex-shrink-0">
+              <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
+                  <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                      </path>
+                  </svg>
+              </div>
+          </div>
+          <h3 class="py-4 text-2xl font-semibold text-gray-700 sm:text-xl">
+            Flexible Learning Options
+          </h3>
+          <p class="py-4 text-gray-500 ">
+            Balancing work, study, and personal commitments? We offer flexible learning options, including Offline & online resources, designed to accommodate your busy schedule and lifestyle.
+          </p>
+      </div>
+      <div class="w-full px-4 py-4 h-[330px] mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
+          <div class="flex-shrink-0">
+              <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
+                  <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                      </path>
+                  </svg>
+              </div>
+          </div>
+          <h3 class="py-4 text-2xl font-semibold text-gray-700 sm:text-xl">
+            Continued Support
+          </h3>
+          <p class="py-4 text-gray-500 ">
+            Your journey with us doesn't end when you graduate. We're committed to your ongoing success and offer alumni support services to help you stay connected, informed, and engaged in the data science community.
+          </p>
+      </div>
+      
+    </div>
+    
+      </section>
+      <section class="py-5">
+      
+        <div class="bg-white w-4/5 mx-auto shadow-lg  ">
+          <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-8 px-4 sm:px-6 lg:py-12 lg:px-8 z-20">
+              <h2 class="text-3xl font-extrabold text-black  sm:text-4xl">
+                  <span class="block">
+                    Ready to kick start your journey with us?
+                  </span>
+                  <span class="block text-indigo-500">
+                    Let’s make waves together!
+                  </span>
+              </h2>
+              <div class="lg:mt-0 lg:flex-shrink-0">
+                  <div class=" inline-flex rounded-md shadow">
+                      <a href="/pages/contact.html"  class="py-4 px-6  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">Get Started</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+            </section>
+     
+        <section class="md:px-8 py-8">
+          <div class="shadow-lg p-4">
+             <h1 class="md:text-3xl text-center  text-2xl pb-2 pt-2">
+                 <span class="text-purple-700  font-bold">How </span>we can help you?
+               </h1>
+               
+               <ul  class="text-slate-500 list-disc pt-5 pl-5 text-xl">
+                 <li class="py-2"><span class="font-semibold">Foundational Training:</span> Our Foundational Training course lays the groundwork for mastering key concepts in data science. Covering topics such as statistical analysis, programming languages, and data visualization, this course is ideal for beginners looking to kickstart their data science journey.</li>
+                 <li class="py-2"><span class="font-semibold">Advanced Specializations:</span> Our Advanced Specializations offer in- depth training on niche topics within data science, such as machine learning, deep learning, and predictive analytics. Enhance your skills and tackle complex data challenges with this advanced course.</li>
+                 <li class="py-2"><span class="font-semibold">Practical Workshops </span>  Participate in our Practical Workshops to gain hands-on experience working on real data sets and industry-based projects. Learn to apply data science techniques in practical scenarios under the guidance of seasoned professionals.</li>
+                 
+               </ul>
+          </div>
+       </section>
+
+     
+
+
+    <script src="/globle.js"></script>
+
+    <script src="/component/header.js"></script>
+    <script src="/component/footer.js"></script>
+    <script>
+        document.body.insertAdjacentHTML("afterbegin",navHtml);
+    </script>
+     <script src="/component/footer.js"></script>
+     <script>
+       document.body.insertAdjacentHTML("beforeend", footer);
+     </script>
+</body>
+</html>
